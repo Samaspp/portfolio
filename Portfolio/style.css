@@ -1,0 +1,313 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.8px;
+  margin: 0px;
+  background-color: #090909;
+  color: white;
+  align-items: center;
+}
+
+
+#header {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  color: white;
+  display: flex;
+  padding: 0px 30px;
+}
+
+#header > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header > div > ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0px 10px;
+}
+
+#header > div > ul > li {
+  margin: 0px 10px;
+}
+
+#header > #header_nav {
+  flex-grow: 1;
+  justify-content: right;
+}
+
+#header_nav a {
+  text-decoration: none;
+  color: white;
+}
+
+#title {
+  font-size: 30px;
+  letter-spacing: 8px;
+  font-weight: 200;
+  margin-left: 70px;
+}
+
+#social_media > ul {
+  justify-content: right;
+  margin-right: 150px;
+}
+
+#social_media img {
+  height: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  #header_nav {
+    display: none !important;
+  }
+  #social_media {
+    display: none !important;
+  }
+}
+
+#tagline {
+  width: 100%;
+  height: 500px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 300;
+  padding: 0px 30px;
+}
+
+@media screen and (max-width: 600px) {  
+  #tagline {
+    flex-direction: column;
+  }
+
+  #tagline_text p1 {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;;
+  }
+}
+
+#profile_photo > img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 600px) {
+  #profile_photo > img {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+#showcase {
+  justify-content: center;
+  max-width: 1200px;
+  color: white;
+}
+
+#showcase h1 {
+  font-size: 24px;
+  text-align: left;
+  font-weight: 300;
+  letter-spacing: 8px;
+}
+
+#showcase > h1 {
+  font-size: 32px;
+  margin-top: 100px;
+}
+
+#showcase h1 > a {
+  text-decoration: none;
+  color: white;
+}
+
+#showcase > .game_info {
+  margin-top: 150px;
+}
+
+#showcase > .game_info > div {
+  display: flex;
+}
+
+#showcase > .game_info .game_tile_container {
+  position: relative;
+}
+
+#showcase > .game_info  .device_tags {
+  bottom: 10px;
+  right: 10px;
+  position: absolute;
+}
+
+#showcase > .game_info  .device_tags span {
+  background: #2b2b2b;
+  margin: 0px 5px;
+  padding: 2px 5px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+#showcase .game_info img {
+  height: 300px;
+  width: 475px;
+  border-radius: 15px;
+}
+
+#showcase .game_description {
+  margin-left: 50px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border-left: 1px solid;
+  padding-left: 30px;
+}
+
+#showcase .game_description p {
+  margin: 10px 0px;
+  font-weight: 300;
+}
+
+#showcase .game_cta {
+  display: flex;
+  justify-content: start;
+  margin-top: 10px;
+}
+
+#showcase .game_cta button {
+  height: 40px;
+  background: none;
+  border: none;
+  color: white;
+  border-right: 1px solid;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#showcase .game_cta button:hover {
+  background: black;
+}
+
+@media screen and (max-width: 600px){
+  #showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #showcase > h1 {
+    width: 80%;
+  }
+
+  #showcase .game_info {
+    margin-top: 100px;
+  }
+  
+  #showcase .game_info > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #showcase .game_info > div > div {
+    width: 80%;
+  }
+
+  #showcase .game_tile_container > img {
+    height: unset;
+    width: 100%;
+  }
+
+  #showcase .game_description {
+    text-align: left;
+    margin: 0px;
+    padding-left: 0px;
+    border: none;
+  }
+
+  #showcase .game_description > h1 {
+    text-align: left;
+  }
+
+  #showcase .game_cta {
+    justify-content: left;
+    margin-top: 10px;
+  }
+
+  #showcase .game_cta button {
+    width: unset;
+    margin-left: 0px;
+    margin-right: 10px;
+    font-size: 16px;
+    border-right: 1px solid;
+  }
+}
+
+#contact {
+  width: 100%;
+  background: black;
+  padding-bottom: 200px;
+  margin-top: 100px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact > h1 {
+  width: 80%;
+  text-align: left;
+  font-weight: 300;
+  letter-spacing: 8px;
+  font-size: 32px;
+  margin: 100px 0px;
+}
+
+#contact > div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 80%;
+  height: 100px;
+  justify-content: space-around;
+}
+
+#contact h1 > a {
+  text-decoration: none;
+  color: white;
+}
+
+#contact button {
+  background: none;
+  border: none;
+  color: white;
+  font-family: inherit;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
