@@ -90,6 +90,7 @@ body {
   font-size: 22px;
   font-weight: 300;
   padding: 0px 30px;
+  margin-right: 100px;
 }
 
 @media screen and (max-width: 600px) {  
@@ -101,7 +102,7 @@ body {
     display: block;
     text-align: center;
     margin-bottom: 50px;
-    font-size: 20px;;
+    font-size: 20px;
   }
 }
 
@@ -170,7 +171,7 @@ body {
 
 #showcase .game_info img {
   height: 300px;
-  width: 475px;
+  width: 500px;
   border-radius: 15px;
 }
 
