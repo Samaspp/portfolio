@@ -97,6 +97,8 @@ body {
 @media screen and (max-width: 600px) {  
   #tagline {
     flex-direction: column;
+    margin-right: 0px;
+    padding-bottom: 80px;
   }
 
   #tagline_text p1 {
@@ -313,3 +315,9 @@ body {
   font-weight: 300;
   letter-spacing: 2px;
 }
+
+@media screen and (max-width: 600px){
+    #contact button {
+        font-size: 16px;
+      }
+    } 
